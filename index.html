@@ -1,0 +1,933 @@
+<!-- Built from Notion · 2026-01-01T00:00:00.000Z -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grave Care Kyiv — Professional Grave Care in Ukraine for Families Abroad</title>
+<meta name="description" content="Professional grave care and cemetery maintenance in Kyiv and across Ukraine. We clean, restore and monitor grave sites with photo reports — trusted by families in USA, Israel, Germany and worldwide since 2008.">
+<meta name="keywords" content="grave care Kyiv, grave cleaning Kiev, cemetery maintenance Ukraine, уход за могилами Киев, grave care Ukraine emigrants">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --stone: #2C2B27;
+    --stone-mid: #5C5A52;
+    --stone-light: #B4B09E;
+    --parchment: #F5F2EB;
+    --parchment-dark: #EAE6DB;
+    --moss: #3B5C2F;
+    --moss-light: #6B9E5A;
+    --gold: #A07840;
+    --white: #FDFCF8;
+    --danger: #8B2020;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    background: var(--white);
+    color: var(--stone);
+    line-height: 1.7;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed; top: 0; width: 100%; z-index: 100;
+    background: rgba(253,252,248,0.95);
+    border-bottom: 1px solid var(--parchment-dark);
+    backdrop-filter: blur(8px);
+    padding: 0 2rem;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 60px;
+  }
+  .nav-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem; font-weight: 600;
+    color: var(--stone); text-decoration: none;
+    letter-spacing: 0.02em;
+  }
+  .nav-logo span { color: var(--moss); }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a {
+    font-size: 0.85rem; font-weight: 400; letter-spacing: 0.05em;
+    text-transform: uppercase; color: var(--stone-mid);
+    text-decoration: none; transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--moss); }
+  .nav-cta {
+    background: var(--moss); color: white;
+    padding: 0.5rem 1.25rem; border-radius: 2px;
+    font-size: 0.8rem; font-weight: 500; letter-spacing: 0.06em;
+    text-transform: uppercase; text-decoration: none;
+    transition: background 0.2s;
+  }
+  .nav-cta:hover { background: var(--stone); }
+  .hamburger { display: none; cursor: pointer; flex-direction: column; gap: 5px; }
+  .hamburger span { display: block; width: 22px; height: 1.5px; background: var(--stone); }
+
+  /* HERO */
+  .hero {
+    min-height: 100vh;
+    display: flex; align-items: center;
+    background: var(--parchment);
+    padding: 100px 2rem 60px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: repeating-linear-gradient(
+      90deg, transparent, transparent 60px,
+      rgba(44,43,39,0.03) 60px, rgba(44,43,39,0.03) 61px
+    );
+  }
+  .hero-inner {
+    max-width: 1100px; margin: 0 auto; width: 100%;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;
+    position: relative;
+  }
+  .hero-eyebrow {
+    font-size: 0.75rem; font-weight: 500; letter-spacing: 0.15em;
+    text-transform: uppercase; color: var(--moss);
+    margin-bottom: 1.25rem;
+    display: flex; align-items: center; gap: 0.75rem;
+  }
+  .hero-eyebrow::before {
+    content: ''; display: block; width: 24px; height: 1px; background: var(--moss);
+  }
+  .hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.4rem, 4.5vw, 3.8rem);
+    font-weight: 600; line-height: 1.15;
+    color: var(--stone); margin-bottom: 1.5rem;
+  }
+  .hero h1 em { font-style: italic; color: var(--moss); }
+  .hero-lead {
+    font-size: 1.05rem; color: var(--stone-mid);
+    line-height: 1.8; margin-bottom: 2.5rem;
+    max-width: 480px;
+  }
+  .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; }
+  .btn-primary {
+    background: var(--moss); color: white;
+    padding: 0.875rem 2rem; border-radius: 2px;
+    font-size: 0.9rem; font-weight: 500; letter-spacing: 0.04em;
+    text-decoration: none; transition: background 0.2s;
+    display: inline-block;
+  }
+  .btn-primary:hover { background: var(--stone); }
+  .btn-secondary {
+    color: var(--stone); border-bottom: 1px solid var(--stone-light);
+    font-size: 0.9rem; font-weight: 400; text-decoration: none;
+    transition: border-color 0.2s, color 0.2s;
+    padding-bottom: 2px;
+  }
+  .btn-secondary:hover { color: var(--moss); border-color: var(--moss); }
+  .hero-messengers {
+    display: flex; gap: 0.75rem; margin-top: 1.5rem; flex-wrap: wrap;
+  }
+  .messenger-btn {
+    display: flex; align-items: center; gap: 0.5rem;
+    padding: 0.5rem 1rem; border-radius: 2px;
+    font-size: 0.8rem; font-weight: 500; text-decoration: none;
+    transition: opacity 0.2s;
+  }
+  .messenger-btn:hover { opacity: 0.85; }
+  .messenger-btn.telegram { background: #229ED9; color: white; }
+  .messenger-btn.whatsapp { background: #25D366; color: white; }
+  .messenger-btn svg { width: 16px; height: 16px; fill: white; }
+  .hero-stats {
+    background: white; border: 1px solid var(--parchment-dark);
+    border-radius: 4px; padding: 2rem;
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  .stat-item { text-align: center; }
+  .stat-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem; font-weight: 600; color: var(--moss);
+    line-height: 1;
+  }
+  .stat-label {
+    font-size: 0.78rem; color: var(--stone-mid);
+    margin-top: 0.4rem; text-transform: uppercase; letter-spacing: 0.06em;
+  }
+  .hero-quote {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic; font-size: 1.1rem;
+    color: var(--stone-mid); margin-top: 1.5rem;
+    padding-top: 1.5rem; border-top: 1px solid var(--parchment-dark);
+    line-height: 1.6;
+  }
+
+  /* TRUST BAR */
+  .trust-bar {
+    background: var(--stone); color: white;
+    padding: 1rem 2rem;
+    display: flex; justify-content: center; gap: 3rem;
+    flex-wrap: wrap;
+  }
+  .trust-item {
+    font-size: 0.8rem; letter-spacing: 0.08em;
+    text-transform: uppercase; opacity: 0.85;
+    display: flex; align-items: center; gap: 0.5rem;
+  }
+  .trust-item::before {
+    content: '✓'; color: var(--moss-light); font-weight: 600;
+  }
+
+  /* SECTIONS */
+  section { padding: 5rem 2rem; }
+  .section-inner { max-width: 1100px; margin: 0 auto; }
+  .section-label {
+    font-size: 0.75rem; font-weight: 500; letter-spacing: 0.15em;
+    text-transform: uppercase; color: var(--moss);
+    margin-bottom: 1rem;
+    display: flex; align-items: center; gap: 0.75rem;
+  }
+  .section-label::before {
+    content: ''; display: block; width: 24px; height: 1px; background: var(--moss);
+  }
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    font-weight: 600; line-height: 1.2;
+    color: var(--stone); margin-bottom: 1rem;
+  }
+  .section-subtitle {
+    font-size: 1rem; color: var(--stone-mid);
+    max-width: 560px; line-height: 1.8;
+  }
+
+  /* SERVICES */
+  .services-bg { background: var(--white); }
+  .services-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5px; margin-top: 3rem;
+    background: var(--parchment-dark); border: 1px solid var(--parchment-dark);
+    border-radius: 4px; overflow: hidden;
+  }
+  .service-card {
+    background: var(--white); padding: 2rem;
+    transition: background 0.2s;
+  }
+  .service-card:hover { background: var(--parchment); }
+  .service-icon {
+    width: 40px; height: 40px; margin-bottom: 1.25rem;
+    color: var(--moss);
+  }
+  .service-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem; font-weight: 600;
+    color: var(--stone); margin-bottom: 0.75rem;
+  }
+  .service-desc {
+    font-size: 0.9rem; color: var(--stone-mid);
+    line-height: 1.7; margin-bottom: 1.25rem;
+  }
+  .service-price {
+    font-size: 0.85rem; font-weight: 500;
+    color: var(--moss);
+  }
+  .service-includes {
+    margin-top: 0.75rem; padding-top: 0.75rem;
+    border-top: 1px solid var(--parchment-dark);
+  }
+  .service-includes li {
+    font-size: 0.82rem; color: var(--stone-mid);
+    list-style: none; padding: 0.2rem 0;
+    display: flex; align-items: flex-start; gap: 0.5rem;
+  }
+  .service-includes li::before { content: '—'; color: var(--stone-light); flex-shrink: 0; }
+
+  /* HOW IT WORKS */
+  .how-bg { background: var(--parchment); }
+  .steps {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0; margin-top: 3rem; position: relative;
+  }
+  .step {
+    padding: 2rem; position: relative;
+  }
+  .step-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.5rem; font-weight: 600; color: var(--parchment-dark);
+    line-height: 1; margin-bottom: 1rem;
+  }
+  .step-title {
+    font-weight: 500; font-size: 1rem;
+    color: var(--stone); margin-bottom: 0.5rem;
+  }
+  .step-desc { font-size: 0.88rem; color: var(--stone-mid); line-height: 1.7; }
+  .step::after {
+    content: '→';
+    position: absolute; right: -8px; top: 2.5rem;
+    font-size: 1.2rem; color: var(--stone-light);
+  }
+  .step:last-child::after { display: none; }
+
+  /* PRICING */
+  .pricing-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem; margin-top: 3rem;
+  }
+  .price-card {
+    background: var(--white); border: 1px solid var(--parchment-dark);
+    border-radius: 4px; padding: 2rem; position: relative;
+    transition: border-color 0.2s;
+  }
+  .price-card:hover { border-color: var(--moss-light); }
+  .price-card.featured {
+    border-color: var(--moss);
+    background: linear-gradient(180deg, rgba(59,92,47,0.03) 0%, var(--white) 40%);
+  }
+  .featured-badge {
+    position: absolute; top: -12px; left: 50%; transform: translateX(-50%);
+    background: var(--moss); color: white;
+    font-size: 0.7rem; font-weight: 500; letter-spacing: 0.1em;
+    text-transform: uppercase; padding: 4px 14px; border-radius: 2px;
+    white-space: nowrap;
+  }
+  .price-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem; font-weight: 600; color: var(--stone);
+    margin-bottom: 0.5rem;
+  }
+  .price-desc { font-size: 0.85rem; color: var(--stone-mid); margin-bottom: 1.5rem; }
+  .price-amount {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.8rem; font-weight: 600; color: var(--stone);
+    line-height: 1;
+  }
+  .price-currency { font-size: 1.4rem; vertical-align: top; padding-top: 0.4rem; display: inline-block; }
+  .price-period { font-size: 0.85rem; color: var(--stone-mid); margin-top: 0.25rem; }
+  .price-features {
+    margin-top: 1.5rem; padding-top: 1.5rem;
+    border-top: 1px solid var(--parchment-dark);
+    list-style: none;
+  }
+  .price-features li {
+    font-size: 0.88rem; color: var(--stone-mid);
+    padding: 0.35rem 0; display: flex; gap: 0.75rem; align-items: flex-start;
+  }
+  .price-features li::before { content: '✓'; color: var(--moss); flex-shrink: 0; font-weight: 500; }
+  .price-cta {
+    display: block; text-align: center; margin-top: 1.75rem;
+    padding: 0.75rem; border: 1px solid var(--stone);
+    color: var(--stone); text-decoration: none;
+    font-size: 0.85rem; font-weight: 500; letter-spacing: 0.04em;
+    transition: all 0.2s; border-radius: 2px;
+  }
+  .price-card.featured .price-cta {
+    background: var(--moss); border-color: var(--moss); color: white;
+  }
+  .price-cta:hover { background: var(--stone); border-color: var(--stone); color: white; }
+
+  /* TESTIMONIALS */
+  .testimonials-bg { background: var(--parchment); }
+  .testimonials-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem; margin-top: 3rem;
+  }
+  .testimonial-card {
+    background: var(--white); padding: 2rem;
+    border-radius: 4px; border: 1px solid var(--parchment-dark);
+  }
+  .testimonial-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic; font-size: 1.1rem;
+    color: var(--stone); line-height: 1.7;
+    margin-bottom: 1.25rem;
+  }
+  .testimonial-author {
+    font-size: 0.8rem; font-weight: 500;
+    color: var(--stone-mid); text-transform: uppercase; letter-spacing: 0.06em;
+  }
+  .testimonial-location {
+    font-size: 0.78rem; color: var(--stone-light); margin-top: 0.2rem;
+  }
+
+  /* CITIES */
+  .cities-grid {
+    display: flex; flex-wrap: wrap; gap: 0.5rem;
+    margin-top: 2rem;
+  }
+  .city-tag {
+    padding: 0.4rem 1rem; border: 1px solid var(--parchment-dark);
+    border-radius: 2px; font-size: 0.82rem; color: var(--stone-mid);
+    background: var(--white);
+  }
+  .city-tag.primary {
+    border-color: var(--moss); color: var(--moss); font-weight: 500;
+  }
+
+  /* ORDER FORM */
+  .order-bg { background: var(--stone); color: white; }
+  .order-bg .section-label { color: var(--moss-light); }
+  .order-bg .section-label::before { background: var(--moss-light); }
+  .order-bg .section-title { color: white; }
+  .order-bg .section-subtitle { color: rgba(255,255,255,0.65); }
+  .order-layout {
+    display: grid; grid-template-columns: 1fr 1.2fr;
+    gap: 4rem; margin-top: 3rem; align-items: start;
+  }
+  .order-info { }
+  .order-guarantee {
+    margin-top: 2rem; padding: 1.5rem;
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 4px;
+  }
+  .order-guarantee h4 {
+    font-size: 0.85rem; font-weight: 500;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--moss-light); margin-bottom: 0.75rem;
+  }
+  .order-guarantee p { font-size: 0.88rem; color: rgba(255,255,255,0.65); line-height: 1.7; }
+  .order-form {
+    background: white; border-radius: 4px; padding: 2.5rem;
+    color: var(--stone);
+  }
+  .form-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem; font-weight: 600; color: var(--stone);
+    margin-bottom: 1.75rem;
+  }
+  .form-group { margin-bottom: 1.25rem; }
+  .form-group label {
+    display: block; font-size: 0.8rem; font-weight: 500;
+    color: var(--stone-mid); text-transform: uppercase;
+    letter-spacing: 0.06em; margin-bottom: 0.4rem;
+  }
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%; padding: 0.75rem 1rem;
+    border: 1px solid var(--parchment-dark); border-radius: 2px;
+    font-family: 'DM Sans', sans-serif; font-size: 0.9rem;
+    color: var(--stone); background: var(--white);
+    transition: border-color 0.2s; outline: none;
+  }
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus { border-color: var(--moss); }
+  .form-group textarea { min-height: 100px; resize: vertical; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .form-submit {
+    width: 100%; padding: 1rem;
+    background: var(--moss); color: white; border: none;
+    font-family: 'DM Sans', sans-serif; font-size: 0.9rem;
+    font-weight: 500; letter-spacing: 0.04em; cursor: pointer;
+    border-radius: 2px; transition: background 0.2s; margin-top: 0.5rem;
+  }
+  .form-submit:hover { background: var(--stone); }
+  .form-note { font-size: 0.78rem; color: var(--stone-light); margin-top: 0.75rem; text-align: center; }
+
+  /* FOOTER */
+  footer {
+    background: #1A1A17; color: rgba(255,255,255,0.6);
+    padding: 3rem 2rem 2rem;
+  }
+  .footer-inner {
+    max-width: 1100px; margin: 0 auto;
+    display: grid; grid-template-columns: 2fr 1fr 1fr;
+    gap: 3rem; padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .footer-brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem; font-weight: 600; color: white;
+    margin-bottom: 0.75rem;
+  }
+  .footer-brand span { color: var(--moss-light); }
+  .footer-tagline { font-size: 0.85rem; line-height: 1.7; }
+  .footer-col h4 {
+    font-size: 0.75rem; font-weight: 500; letter-spacing: 0.1em;
+    text-transform: uppercase; color: rgba(255,255,255,0.9);
+    margin-bottom: 1rem;
+  }
+  .footer-col a {
+    display: block; color: rgba(255,255,255,0.55);
+    text-decoration: none; font-size: 0.85rem;
+    padding: 0.25rem 0; transition: color 0.2s;
+  }
+  .footer-col a:hover { color: var(--moss-light); }
+  .footer-bottom {
+    max-width: 1100px; margin: 0 auto; padding-top: 1.5rem;
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: 0.78rem; flex-wrap: wrap; gap: 0.5rem;
+  }
+  .footer-langs { display: flex; gap: 1rem; }
+  .footer-langs a {
+    color: rgba(255,255,255,0.45); text-decoration: none;
+    font-size: 0.78rem; transition: color 0.2s;
+  }
+  .footer-langs a:hover, .footer-langs a.active { color: white; }
+
+  /* MOBILE */
+  @media (max-width: 768px) {
+    .nav-links { display: none; }
+    .hamburger { display: flex; }
+    .hero-inner { grid-template-columns: 1fr; gap: 3rem; }
+    .hero-stats { grid-template-columns: repeat(3,1fr); }
+    .order-layout { grid-template-columns: 1fr; }
+    .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
+    .form-row { grid-template-columns: 1fr; }
+    .trust-bar { gap: 1rem; padding: 1rem; }
+    .steps { grid-template-columns: 1fr; }
+    .step::after { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#" class="nav-logo">Grave<span>Care</span>Kyiv</a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#how">How it works</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
+    <li><a href="#cities">Cities</a></li>
+  </ul>
+  <a href="#order" class="nav-cta">Order Now</a>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-eyebrow">Since 2008 · 1000+ services completed</div>
+      <h1>You are far away —<br><em>but memory stays close.</em></h1>
+      <p class="hero-lead">
+        We care for the graves of your loved ones in Kyiv and across Ukraine.
+        Photo reports sent directly to you. Trusted by families in the USA, Israel, Germany and worldwide.
+      </p>
+      <div class="hero-actions">
+        <a href="#order" class="btn-primary">Order grave care</a>
+        <a href="#services" class="btn-secondary">See all services</a>
+      </div>
+      <div class="hero-messengers">
+        <a href="https://t.me/gravecarekyiv" class="messenger-btn telegram" target="_blank">
+          <svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.94 8.19l-2.02 9.52c-.15.67-.54.84-1.08.52l-3-2.21-1.45 1.39c-.16.16-.3.3-.61.3l.22-3.1 5.63-5.08c.24-.22-.05-.34-.38-.12L6.32 14.4l-2.97-.93c-.64-.2-.66-.64.14-.95l11.6-4.47c.54-.2 1.01.13.85.94z"/></svg>
+          Telegram
+        </a>
+        <a href="https://wa.me/380501234567" class="messenger-btn whatsapp" target="_blank">
+          <svg viewBox="0 0 24 24"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.89-.8-1.5-1.78-1.67-2.08-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51H6.8c-.2 0-.52.07-.79.37-.27.3-1.02 1-1.02 2.43s1.05 2.82 1.2 3.02c.14.2 2.07 3.16 5.01 4.43 2.95 1.26 2.95.84 3.48.79.53-.05 1.71-.7 1.95-1.37.24-.67.24-1.25.17-1.37-.07-.12-.27-.2-.57-.34z"/><path d="M12 0C5.37 0 0 5.37 0 12c0 2.1.55 4.08 1.5 5.8L0 24l6.35-1.66A11.93 11.93 0 0012 24c6.63 0 12-5.37 12-12S18.63 0 12 0zm0 21.9a9.87 9.87 0 01-5.03-1.38l-.36-.21-3.73.98.99-3.63-.24-.37A9.87 9.87 0 012.1 12C2.1 6.52 6.52 2.1 12 2.1c5.48 0 9.9 4.42 9.9 9.9 0 5.48-4.42 9.9-9.9 9.9z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+    </div>
+    <div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-num">1000+</div>
+          <div class="stat-label">Services<br>completed</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">17</div>
+          <div class="stat-label">Years of<br>experience</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">16</div>
+          <div class="stat-label">Cities<br>covered</div>
+        </div>
+      </div>
+      <p class="hero-quote">"A person lives on as long as they are remembered…<br>We help keep that memory, even from afar."</p>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-item">Photo report before & after</div>
+  <div class="trust-item">Payment in USD / EUR</div>
+  <div class="trust-item">Response within 24 hours</div>
+  <div class="trust-item">Service within 14 days</div>
+  <div class="trust-item">Working since 2008</div>
+</div>
+
+<!-- SERVICES -->
+<section class="services-bg" id="services">
+  <div class="section-inner">
+    <div class="section-label">What we do</div>
+    <h2 class="section-title">Our services</h2>
+    <p class="section-subtitle">Everything your family's burial site needs — cleaned, restored and monitored, with photo proof sent to you directly.</p>
+    <div class="services-grid">
+      
+      <div class="service-card">
+        
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        <div class="service-name">One-time cleaning</div>
+        <div class="service-desc">Complete grave cleaning with full photo documentation. Perfect first order to see the current condition.</div>
+        <div class="service-price">From $44</div>
+        <ul class="service-includes">
+          <li>Weeding and debris removal</li>
+          <li>Monument washing</li>
+          <li>Watering flowers</li>
+          <li>4 photos before + 4 after</li>
+        </ul>
+      </div>
+
+      <div class="service-card featured">
+        <div class="featured-badge">Most popular</div>
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        <div class="service-name">Annual care plan</div>
+        <div class="service-desc">3 visits a year — spring, summer and autumn. The most popular option for families living abroad.</div>
+        <div class="service-price">$114 / year</div>
+        <ul class="service-includes">
+          <li>3 scheduled cleanings</li>
+          <li>Monument washing each visit</li>
+          <li>Photo reports every visit</li>
+          <li>Priority scheduling</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <div class="service-name">Grave location</div>
+        <div class="service-desc">We find the burial site when you don't have exact location details — row, plot, or even which cemetery.</div>
+        <div class="service-price">From $50</div>
+        <ul class="service-includes">
+          <li>Search by name and date</li>
+          <li>GPS coordinates provided</li>
+          <li>Site photos sent to you</li>
+          <li>Condition assessment</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+        <div class="service-name">Repair & restoration</div>
+        <div class="service-desc">Fence painting, tile laying, monument repair, planting flowers. Fully coordinated, remotely.</div>
+        <div class="service-price">By request</div>
+        <ul class="service-includes">
+          <li>Fence painting / rust removal</li>
+          <li>Granite / tile paving</li>
+          <li>New monument installation</li>
+          <li>Flower planting & soil</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div class="service-name">Site visit & photo</div>
+        <div class="service-desc">A dedicated visit to photograph the current condition — useful before ordering cleaning or for a specific date.</div>
+        <div class="service-price">$28</div>
+        <ul class="service-includes">
+          <li>Visit on requested date</li>
+          <li>Full photo set sent</li>
+          <li>GPS coordinates</li>
+          <li>Condition report</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0112 2a8 8 0 018 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div class="service-name">Flower placement</div>
+        <div class="service-desc">Fresh flowers placed on the grave on a specific date — anniversary, birthday, or any occasion.</div>
+        <div class="service-price">From $7</div>
+        <ul class="service-includes">
+          <li>2 roses or carnations</li>
+          <li>Placed on your chosen date</li>
+          <li>Photo confirmation</li>
+          <li>Available with any visit</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how-bg" id="how">
+  <div class="section-inner">
+    <div class="section-label">The process</div>
+    <h2 class="section-title">How it works</h2>
+    <p class="section-subtitle">Simple, transparent and reliable. You're kept informed at every step.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <div class="step-title">Submit your request</div>
+        <div class="step-desc">Fill in the form, write to us on Telegram or WhatsApp. Tell us the cemetery and grave location — or just a name and city.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <div class="step-title">We confirm & quote</div>
+        <div class="step-desc">We respond within 24 hours with a confirmed price, timeline and any questions we need answered.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <div class="step-title">You pay securely</div>
+        <div class="step-desc">PayPal, bank transfer, Western Union or any convenient method. We accept USD, EUR and UAH.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <div class="step-title">Work is completed</div>
+        <div class="step-desc">Service carried out within 14 days. Weather permitting. We notify you when it's scheduled.</div>
+      </div>
+      <div class="step">
+        <div class="step-num">05</div>
+        <div class="step-title">Photo report sent</div>
+        <div class="step-desc">You receive 4 photos before and 4 photos after, by email or messenger. No surprises — only results.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing">
+  <div class="section-inner">
+    <div class="section-label">Transparent pricing</div>
+    <h2 class="section-title">Kyiv prices</h2>
+    <p class="section-subtitle">All prices in USD. Other cities may vary slightly — contact us for a quote.</p>
+    <div class="pricing-grid">
+      
+      <div class="price-card">
+        
+        <div class="price-name">One-time cleaning</div>
+        <div class="price-desc">Complete grave cleaning with full photo documentation. Perfect first order to see the current condition.</div>
+        <div class="price-amount"><span class="price-currency">$</span>44</div>
+        <ul class="price-features">
+          <li>Weeding and debris removal</li>
+          <li>Monument washing</li>
+          <li>Watering flowers</li>
+          <li>4 photos before + 4 after</li>
+        </ul>
+        <a href="#order" class="price-cta">Order now</a>
+      </div>
+
+      <div class="price-card featured">
+        <div class="featured-badge">Most popular</div>
+        <div class="price-name">Annual care plan</div>
+        <div class="price-desc">3 visits a year — spring, summer and autumn. The most popular option for families living abroad.</div>
+        <div class="price-amount"><span class="price-currency">$</span>114</div>
+        <ul class="price-features">
+          <li>3 scheduled cleanings</li>
+          <li>Monument washing each visit</li>
+          <li>Photo reports every visit</li>
+          <li>Priority scheduling</li>
+        </ul>
+        <a href="#order" class="price-cta">Order now</a>
+      </div>
+
+      <div class="price-card">
+        
+        <div class="price-name">Grave location</div>
+        <div class="price-desc">We find the burial site when you don't have exact location details — row, plot, or even which cemetery.</div>
+        <div class="price-amount"><span class="price-currency">$</span>50</div>
+        <ul class="price-features">
+          <li>Search by name and date</li>
+          <li>GPS coordinates provided</li>
+          <li>Site photos sent to you</li>
+          <li>Condition assessment</li>
+        </ul>
+        <a href="#order" class="price-cta">Order now</a>
+      </div>
+    </div>
+    <p style="margin-top: 1.5rem; font-size: 0.85rem; color: var(--stone-mid);">
+      Site visit only: $28 · Flower placement: from $7 · GPS coordinates: $3 · Travel outside Kyiv: $0.40/km · Repairs & restoration: by request
+    </p>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-bg" id="testimonials">
+  <div class="section-inner">
+    <div class="section-label">Customer reviews</div>
+    <h2 class="section-title">What families say</h2>
+    <div class="testimonials-grid">
+      
+      <div class="testimonial-card">
+        <div class="testimonial-text">"You did absolutely outstanding job."</div>
+        <div class="testimonial-author">A.M.</div>
+        <div class="testimonial-location">United States</div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-text">"We appreciate what you have done and will recommend your services to our friends and acquaintances."</div>
+        <div class="testimonial-author">Family K.</div>
+        <div class="testimonial-location">Germany</div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-text">"This is a blessing. We are so glad that even from thousands of kilometers away we can now care for our grandfather's grave. Thank you for your help."</div>
+        <div class="testimonial-author">L.S.</div>
+        <div class="testimonial-location">Israel</div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-text">"I am grateful for the professional approach and excellent work completed in the shortest possible time. I will definitely contact you again."</div>
+        <div class="testimonial-author">N.V.</div>
+        <div class="testimonial-location">Italy</div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-text">"Thank you very much for the excellent work. We will definitely continue our cooperation next year."</div>
+        <div class="testimonial-author">O.P.</div>
+        <div class="testimonial-location">Poland</div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="testimonial-text">"Not the first year I have been using your services. The work on the grave was done with quality and on time. Thank you."</div>
+        <div class="testimonial-author">T.K.</div>
+        <div class="testimonial-location">Canada</div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- CITIES -->
+<section id="cities">
+  <div class="section-inner">
+    <div class="section-label">Coverage</div>
+    <h2 class="section-title">Cities we serve</h2>
+    <p class="section-subtitle">We operate across 16 base cities, covering all of Ukraine. Don't see your city? Contact us — we'll find a solution.</p>
+    <div class="cities-grid">
+      <span class="city-tag primary">Kyiv</span>
+      <span class="city-tag primary">Kharkiv</span>
+      <span class="city-tag">Odesa</span>
+      <span class="city-tag">Dnipro</span>
+      <span class="city-tag">Poltava</span>
+      <span class="city-tag">Mykolaiv</span>
+      <span class="city-tag">Chernihiv</span>
+      <span class="city-tag">Sumy</span>
+      <span class="city-tag">Zaporizhzhia</span>
+      <span class="city-tag">Lutsk</span>
+      <span class="city-tag">Rivne</span>
+      <span class="city-tag">Vinnytsia</span>
+      <span class="city-tag">Chernivtsi</span>
+      <span class="city-tag">Khmelnytskyi</span>
+      <span class="city-tag">Uzhhorod</span>
+      <span class="city-tag">Kherson</span>
+    </div>
+  </div>
+</section>
+<!-- ORDER FORM -->
+<section class="order-bg" id="order">
+  <div class="section-inner">
+    <div class="order-layout">
+      <div class="order-info">
+        <div class="section-label">Get in touch</div>
+        <h2 class="section-title">Order grave care</h2>
+        <p class="section-subtitle">Fill in the form and we will reply within 24 hours with a quote and timeline. Or contact us directly:</p>
+        <div class="hero-messengers" style="margin-top: 1.5rem;">
+          <a href="https://t.me/gravecarekyiv" class="messenger-btn telegram" target="_blank">
+            <svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.94 8.19l-2.02 9.52c-.15.67-.54.84-1.08.52l-3-2.21-1.45 1.39c-.16.16-.3.3-.61.3l.22-3.1 5.63-5.08c.24-.22-.05-.34-.38-.12L6.32 14.4l-2.97-.93c-.64-.2-.66-.64.14-.95l11.6-4.47c.54-.2 1.01.13.85.94z"/></svg>
+            Telegram
+          </a>
+          <a href="https://wa.me/380501234567" class="messenger-btn whatsapp" target="_blank">
+            <svg viewBox="0 0 24 24"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.89-.8-1.5-1.78-1.67-2.08-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51H6.8c-.2 0-.52.07-.79.37-.27.3-1.02 1-1.02 2.43s1.05 2.82 1.2 3.02c.14.2 2.07 3.16 5.01 4.43 2.95 1.26 2.95.84 3.48.79.53-.05 1.71-.7 1.95-1.37.24-.67.24-1.25.17-1.37-.07-.12-.27-.2-.57-.34z"/><path d="M12 0C5.37 0 0 5.37 0 12c0 2.1.55 4.08 1.5 5.8L0 24l6.35-1.66A11.93 11.93 0 0012 24c6.63 0 12-5.37 12-12S18.63 0 12 0zm0 21.9a9.87 9.87 0 01-5.03-1.38l-.36-.21-3.73.98.99-3.63-.24-.37A9.87 9.87 0 012.1 12C2.1 6.52 6.52 2.1 12 2.1c5.48 0 9.9 4.42 9.9 9.9 0 5.48-4.42 9.9-9.9 9.9z"/></svg>
+            WhatsApp
+          </a>
+        </div>
+        <div class="order-guarantee">
+          <h4>Our guarantee</h4>
+          <p>We complete all services within 14 days of payment. If we cannot access the grave for any reason, you receive a full refund with documented explanation and photographs.</p>
+        </div>
+      </div>
+
+      <div class="order-form">
+        <div class="form-title">Send a request</div>
+        <form name="order-request" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/success.html">
+          <input type="hidden" name="form-name" value="order-request">
+          <p hidden><input name="bot-field"></p>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Your name</label>
+              <input type="text" name="name" placeholder="Anna Smith" required>
+            </div>
+            <div class="form-group">
+              <label>Your country</label>
+              <input type="text" name="country" placeholder="USA, Israel, Germany...">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label>Service needed</label>
+            <select name="service">
+              <option value="">— Select service —</option>
+              <option>One-time cleaning (From $44)</option>
+              <option>Annual care plan ($114 / year)</option>
+              <option>Grave location (From $50)</option>
+              <option>Repair & restoration</option>
+              <option>Site visit & photo ($28)</option>
+              <option>Flower placement (From $7)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Cemetery & city</label>
+            <input type="text" name="cemetery" placeholder="e.g. Baikove Cemetery, Kyiv">
+          </div>
+          <div class="form-group">
+            <label>Additional details</label>
+            <textarea name="details" placeholder="Name of the deceased, plot/row number if known, any special requests..."></textarea>
+          </div>
+          <button type="submit" class="form-submit">Send request →</button>
+          <p class="form-note">We reply within 24 hours · All communications in English, Russian or Ukrainian</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">Grave<span>Care</span>Kyiv</div>
+      <p class="footer-tagline">Professional grave care and cemetery maintenance in Kyiv and across Ukraine. Trusted by families worldwide since 2008.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <a href="#services">One-time cleaning</a>
+      <a href="#services">Annual care plan</a>
+      <a href="#services">Grave location</a>
+      <a href="#services">Repair & restoration</a>
+      <a href="#services">Flower placement</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="https://t.me/gravecarekyiv" target="_blank">Telegram</a>
+      <a href="https://wa.me/380501234567" target="_blank">WhatsApp</a>
+      <a href="mailto:info@gravecarekyiv.com">Email us</a>
+      <a href="#order">Send a request</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2008–2026 GraveCareUkraine. All rights reserved.</span>
+    <div class="footer-langs">
+      <a href="index.html" class="active">EN</a>
+      <a href="index-ru.html">RU</a>
+      <a href="index-uk.html">UA</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleMenu() {
+  const links = document.querySelector('.nav-links');
+  if (links.style.display === 'flex') {
+    links.style.display = 'none';
+  } else {
+    links.style.cssText = 'display:flex;flex-direction:column;position:absolute;top:60px;left:0;right:0;background:rgba(253,252,248,0.98);padding:1rem 2rem 1.5rem;gap:1rem;border-bottom:1px solid #EAE6DB;';
+  }
+}
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', () => {
+    document.querySelector('.nav-links').style.display = '';
+  });
+});
+</script>
+</body>
+</html>
