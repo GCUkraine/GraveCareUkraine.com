@@ -1,0 +1,128 @@
+# GraveCareUkraine.com
+
+Live site: https://gravecareuakraine.com  
+Netlify preview: https://superlative-dragon-986bcd.netlify.app  
+GitHub repo: https://github.com/GCUkraine/GraveCareUkraine.com
+
+---
+
+## How the site works
+
+```
+You edit index.html (on GitHub or locally)
+        ↓
+Commit to main branch
+        ↓
+Netlify auto-detects the commit
+        ↓
+Site is live in ~45 seconds
+```
+
+No build step. No scripts. index.html IS the website.
+
+---
+
+## Files
+
+```
+index.html      ← THE WEBSITE — edit this to change anything
+success.html    ← Page shown after order form is submitted
+README.md       ← This file
+.gitignore      ← Keeps junk files (.DS_Store etc) off GitHub
+```
+
+---
+
+## How to edit content
+
+### Option A — GitHub browser (recommended, works on phone)
+1. Go to: https://github.com/GCUkraine/GraveCareUkraine.com/edit/main/index.html
+2. Make your changes
+3. Click "Commit changes" → "Commit directly to main" → green button
+4. Wait 45 seconds → site is updated. Bookmark that URL.
+
+### Option B — Local editor (VS Code etc.)
+```bash
+git pull
+# edit index.html
+git add index.html
+git commit -m "describe what you changed"
+git push
+```
+
+### Option C — Ask Claude
+Paste the section you want changed and describe what you want.
+Claude edits it and gives you the updated block to paste in.
+
+---
+
+## What to edit — use Ctrl+F to find these in index.html
+
+| What | Search for |
+|---|---|
+| WhatsApp number | wa.me/ |
+| Email address | mailto: |
+| Hero headline | You are far away |
+| Hero subtext | We care for the graves |
+| Stats (1000+, 17yr, 16 cities) | stat-num |
+| Service names/prices | service-name |
+| Testimonials | testimonial-text |
+| Cities list | city-tag |
+| Guarantee text | Our guarantee |
+
+---
+
+## Order form — setup & notifications
+
+Form uses Netlify Forms (free, 100 submissions/month).
+
+### Activate (one-time)
+Submit a test order on the live site → go to Netlify dashboard → Forms tab → order-request appears.
+
+### Email notifications on every order
+Netlify → Forms → order-request → Form notifications → Add notification → Email notification → enter your email → Save.
+
+### See all submissions
+Netlify dashboard → Forms → order-request.
+
+### Optional: Zapier → WhatsApp/Gmail alert (free, 100/month)
+Trigger: Netlify → New Form Submission (order-request)
+Action: Gmail → Send email to yourself
+
+---
+
+## Delete a file from GitHub
+
+Browser: open file → trash icon → Commit changes
+
+Terminal:
+```bash
+git rm filename
+git commit -m "remove filename"
+git push
+```
+
+## Remove .DS_Store already on GitHub
+```bash
+git rm --cached .DS_Store
+git commit -m "Remove .DS_Store"
+git push
+```
+
+---
+
+## Connect domain (one-time)
+1. Netlify → Site configuration → Domain management → Add custom domain → gravecareuakraine.com
+2. At Namecheap add:
+   - A record: @ → 75.2.60.5
+   - CNAME: www → superlative-dragon-986bcd.netlify.app
+3. SSL activates automatically
+
+---
+
+## Coming soon
+- Google Sheets sync (edit in spreadsheet, click button → site updates)
+- Decap CMS (visual admin panel at /admin)
+- Russian & Ukrainian versions (index-ru.html, index-uk.html)
+- Gallery page with before/after photos
+- City landing pages (/kyiv, /kharkiv) for SEO
