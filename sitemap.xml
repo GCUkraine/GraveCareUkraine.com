@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- ===== ENGLISH (default) ===== -->
+  <url>
+    <loc>https://gravecareukraine.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gravecareukraine.com/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://gravecareukraine.com/index-ua.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://gravecareukraine.com/index-ru.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gravecareukraine.com/"/>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- ===== UKRAINIAN ===== -->
+  <url>
+    <loc>https://gravecareukraine.com/index-ua.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gravecareukraine.com/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://gravecareukraine.com/index-ua.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://gravecareukraine.com/index-ru.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gravecareukraine.com/"/>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ===== RUSSIAN (placeholder — file not yet created) ===== -->
+  <!--
+  <url>
+    <loc>https://gravecareukraine.com/index-ru.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gravecareukraine.com/"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://gravecareukraine.com/index-ua.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://gravecareukraine.com/index-ru.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gravecareukraine.com/"/>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  -->
+
+  <!-- ===== LEGAL PAGES — EN ===== -->
+  <url>
+    <loc>https://gravecareukraine.com/privacy.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://gravecareukraine.com/terms.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://gravecareukraine.com/cookies.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.1</priority>
+  </url>
+
+  <!-- ===== LEGAL PAGES — UA ===== -->
+  <url>
+    <loc>https://gravecareukraine.com/privacy-ua.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://gravecareukraine.com/terms-ua.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://gravecareukraine.com/cookies-ua.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.1</priority>
+  </url>
+
+  <!-- ===== FUTURE: CITY LANDING PAGES =====
+  Add new <url> blocks here as city pages are created.
+  Example template:
+  <url>
+    <loc>https://gravecareukraine.com/kyiv.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gravecareukraine.com/kyiv.html"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://gravecareukraine.com/kyiv-ua.html"/>
+    <lastmod>YYYY-MM-DD</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  ===== -->
+
+</urlset>
