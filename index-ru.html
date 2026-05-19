@@ -212,10 +212,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .nav-cta { font-size: 0.72rem; padding: 0.4rem 0.75rem; white-space: nowrap; flex-shrink: 0; }
     .nav-links { display: none; }
     .hamburger { display: flex; }
-    .hero { padding: 100px 1.25rem 60px; overflow: hidden; }
-    .hero-lead { max-width: 100%; }
-    .hero-inner { grid-template-columns: 1fr; gap: 3rem; }
-    .hero-stats { grid-template-columns: repeat(3,1fr); }
+    .hero { padding: 100px 1.25rem 60px; overflow: visible; }
+    .hero h1 { max-width: 100%; font-size: clamp(1.7rem, 7vw, 2.2rem); }
+    .hero-lead { max-width: 100%; font-size: 0.95rem; }
+    .hero-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+    .hero-stats { grid-template-columns: repeat(3,1fr); gap: 0.5rem; padding: 1.25rem 0.75rem; }
+    .stat-num { font-size: 1.8rem; }
+    .stat-label { font-size: 0.65rem; letter-spacing: 0.03em; }
     .order-layout { grid-template-columns: 1fr; }
     .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
     .form-row { grid-template-columns: 1fr; }
@@ -228,6 +231,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .top-services-grid { grid-template-columns: 1fr; }
     .wa-qr-block { display: none; }
     section { padding: 3.5rem 1.25rem; }
+    .grave-search-inner { grid-template-columns: 1fr !important; gap: 1rem !important; }
+    .grave-search-price { text-align: left !important; }
+    .grave-search-btn { display: block !important; text-align: center !important; white-space: normal !important; }
   }
 </style>
 </head>
@@ -317,15 +323,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- UNKNOWN LOCATION -->
     <div style="background:var(--parchment); border:1px solid var(--border); border-radius:var(--radius); padding:1.5rem 2rem; margin-top:2rem; margin-bottom:0.75rem;">
       <div style="font-size:0.7rem; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--stone-light); margin-bottom:0.5rem;">Если вы не знаете, где находится могила</div>
-      <div style="display:grid; grid-template-columns:1fr auto; gap:2rem; align-items:center;">
+      <div class="grave-search-inner" style="display:grid; grid-template-columns:1fr auto; gap:2rem; align-items:center;">
         <div>
           <div style="font-family:'Lora',serif; font-size:1.25rem; font-weight:600; color:var(--stone); margin-bottom:0.4rem;">Поиск могилы</div>
           <div style="font-size:0.875rem; color:var(--stone-mid); line-height:1.7;">Многие семьи потеряли информацию о месте захоронения родственников — это случается, особенно после долгих лет за рубежом. Расскажите, что помните — город, кладбище, примерные даты — и мы честно скажем, сможем ли попробовать найти.</div>
         </div>
-        <div style="text-align:right; flex-shrink:0;">
+        <div class="grave-search-price" style="text-align:right; flex-shrink:0;">
           <div style="font-family:'Lora',serif; font-size:1.7rem; font-weight:600; color:var(--moss); line-height:1;">от $50</div>
           <div style="font-size:0.78rem; color:var(--stone-light); margin-bottom:0.85rem;">обсуждается индивидуально</div>
-          <a href="#order" style="display:inline-block; padding:0.55rem 1.1rem; background:var(--moss); color:white; text-decoration:none; border-radius:var(--radius-sm); font-size:0.85rem; font-weight:500; white-space:nowrap; transition:background 0.15s;" onmouseover="this.style.background='#1A1A18'" onmouseout="this.style.background='#2D5226'" data-service="Поиск могилы (не знаю точного места)">Сначала напишите нам</a>
+          <a href="#order" class="grave-search-btn" style="display:inline-block; padding:0.55rem 1.1rem; background:var(--moss); color:white; text-decoration:none; border-radius:var(--radius-sm); font-size:0.85rem; font-weight:500; white-space:nowrap; transition:background 0.15s;" onmouseover="this.style.background='#1A1A18'" onmouseout="this.style.background='#2D5226'" data-service="Поиск могилы (не знаю точного места)">Сначала напишите нам</a>
         </div>
       </div>
     </div>
