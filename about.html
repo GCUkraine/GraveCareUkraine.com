@@ -80,14 +80,17 @@
     }
 
     /* NAV */
-    nav { background: var(--white); border-bottom: 1px solid var(--border); padding: 0 24px; position: sticky; top: 0; z-index: 100; }
-    .nav-inner { max-width: var(--max-wide); margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 60px; }
-    .nav-logo { font-family: var(--serif); font-size: 1.1rem; font-weight: 600; color: var(--text); text-decoration: none; }
-    .nav-links { display: flex; gap: 28px; list-style: none; }
-    .nav-links a { color: var(--text-mid); text-decoration: none; font-size: 0.88rem; font-weight: 600; letter-spacing: 0.03em; text-transform: uppercase; transition: color 0.2s; }
+    nav { background: rgba(253,252,248,0.96); border-bottom: 1px solid var(--border); padding: 0 2.5rem; position: sticky; top: 0; z-index: 100; backdrop-filter: blur(12px); display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    .nav-logo { font-family: var(--serif); font-size: 1.25rem; font-weight: 600; color: var(--text); text-decoration: none; letter-spacing: 0.01em; }
+    .nav-logo span { color: var(--accent); }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { font-size: 0.875rem; font-weight: 400; color: var(--text-mid); text-decoration: none; transition: color 0.15s; }
     .nav-links a:hover { color: var(--accent); }
-    .nav-cta { background: var(--accent); color: var(--white) !important; padding: 7px 18px; border-radius: 3px; }
+    .nav-links a.active { color: var(--accent); }
+    .nav-cta { background: var(--accent); color: white !important; padding: 0.5rem 1.25rem; border-radius: 3px; font-size: 0.85rem; font-weight: 500; text-decoration: none; transition: background 0.15s; white-space: nowrap; flex-shrink: 0; }
     .nav-cta:hover { background: var(--accent-dk) !important; }
+    .hamburger { display: none; cursor: pointer; flex-direction: column; gap: 5px; flex-shrink: 0; }
+    .hamburger span { display: block; width: 22px; height: 1.5px; background: var(--text); }
 
     /* HERO */
     .hero { background: var(--white); border-bottom: 1px solid var(--border); padding: 64px 24px 56px; text-align: center; }
@@ -224,7 +227,11 @@
 
     /* MOBILE */
     @media (max-width: 640px) {
+      nav { padding: 0 1rem; gap: 0.5rem; }
+      .nav-logo { font-size: 1.05rem; flex-shrink: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+      .nav-cta { font-size: 0.72rem; padding: 0.4rem 0.75rem; white-space: nowrap; flex-shrink: 0; }
       .nav-links { display: none; }
+      .hamburger { display: flex; }
 
       /* proof bar: each item full-width on very small screens */
       .hero-proof-bar { flex-direction: column; align-items: center; gap: 10px; }
@@ -255,15 +262,16 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KCTXPQPL" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <nav>
-  <div class="nav-inner">
-    <a href="https://gravecareukraine.com/" class="nav-logo">GraveCareUkraine</a>
-    <ul class="nav-links">
-      <li><a href="https://gravecareukraine.com/#services">Services</a></li>
-      <li><a href="https://gravecareukraine.com/#how">How it works</a></li>
-      <li><a href="https://gravecareukraine.com/#gallery">Our work</a></li>
-      <li><a href="/about" style="color: var(--accent);">About us</a></li>
-      <li><a href="https://gravecareukraine.com/#order" class="nav-cta">Get in touch</a></li>
-    </ul>
+  <a href="https://gravecareukraine.com/" class="nav-logo">Grave<span>Care</span>Ukraine</a>
+  <ul class="nav-links">
+    <li><a href="https://gravecareukraine.com/#services">What we do</a></li>
+    <li><a href="https://gravecareukraine.com/#how">How it works</a></li>
+    <li><a href="https://gravecareukraine.com/#gallery">Our work</a></li>
+    <li><a href="https://gravecareukraine.com/about" class="active">About us</a></li>
+  </ul>
+  <a href="https://gravecareukraine.com/#order" class="nav-cta">Get in touch</a>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
   </div>
 </nav>
 
@@ -536,8 +544,8 @@
       <a href="https://gravecareukraine.com/">Home</a>
       <a href="https://gravecareukraine.com/#services">Services</a>
       <a href="https://gravecareukraine.com/#gallery">Our work</a>
-      <a href="/about">About us</a>
-      <a href="info">Info &amp; Field Notes</a>
+      <a href="https://gravecareukraine.com/about">About us</a>
+      <a href="https://gravecareukraine.com/info">Info &amp; Field Notes</a>
       <a href="https://gravecareukraine.com/#order">Contact</a>
     </div>
     <div class="footer-socials">
@@ -569,5 +577,21 @@
     els.forEach(function(el) { el.textContent = years; });
   })();
 </script>
+<script>
+function toggleMenu() {
+  const links = document.querySelector('.nav-links');
+  if (links.style.display === 'flex') {
+    links.style.display = 'none';
+  } else {
+    links.style.cssText = 'display:flex;flex-direction:column;position:absolute;top:64px;left:0;right:0;background:rgba(253,252,248,0.98);padding:1rem 2rem 1.5rem;gap:1rem;border-bottom:1px solid #EAE6DB;z-index:99;';
+  }
+}
+document.querySelectorAll('.nav-links a').forEach(a => {
+  a.addEventListener('click', () => {
+    document.querySelector('.nav-links').style.display = '';
+  });
+});
+</script>
+
 </body>
 </html>
