@@ -373,6 +373,9 @@ body.about { font-size: 17px; line-height: 1.72; overflow-x: hidden; }
 .proof-link-title { font-weight: 600; color: var(--stone); font-size: 0.93rem; margin-bottom: 3px; }
 .proof-link-desc { font-size: 0.84rem; color: var(--stone-mid); line-height: 1.5; }
 .proof-link-url { font-size: 0.71rem; color: var(--stone-light); margin-top: 4px; font-style: italic; word-break: break-all; }
+.proof-links-inline { margin-top: 14px; }
+.proof-note { margin-top: 20px; font-size: 0.92rem; color: var(--stone-mid); }
+.email-proof-note { margin-top: 12px; font-size: 0.8rem; color: var(--stone-light); font-style: italic; }
 
 /* Forum proof */
 .forum-proof { margin-top: 20px; margin-bottom: 16px; }
