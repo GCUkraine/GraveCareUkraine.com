@@ -510,7 +510,83 @@ section { padding: 5rem 2.5rem; }
 .city-tag { padding: 0.4rem 1rem; border: 1px solid var(--border); border-radius: 20px; font-size: 0.85rem; color: var(--stone-mid); background: var(--white); }
 .city-tag.primary { border-color: var(--moss); color: var(--moss); font-weight: 500; background: rgba(45,82,38,0.05); }
 
-/* Order form */
+/* Grave search card */
+.grave-search-card { background: var(--parchment); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem 2rem; margin-top: 2rem; margin-bottom: 0.75rem; }
+.grave-search-label { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--stone-light); margin-bottom: 0.5rem; }
+.grave-search-inner { display: grid; grid-template-columns: 1fr auto; gap: 2rem; align-items: center; }
+.grave-search-name { font-family: var(--serif); font-size: 1.25rem; font-weight: 600; color: var(--stone); margin-bottom: 0.4rem; }
+.grave-search-desc { font-size: 0.875rem; color: var(--stone-mid); line-height: 1.7; }
+.grave-search-price { text-align: right; flex-shrink: 0; }
+.grave-search-price-num { font-family: var(--serif); font-size: 1.7rem; font-weight: 600; color: var(--moss); line-height: 1; }
+.grave-search-price-note { font-size: 0.78rem; color: var(--stone-light); margin-bottom: 0.85rem; }
+.grave-search-btn { display: inline-block; padding: 0.55rem 1.1rem; background: var(--moss); color: white; text-decoration: none; border-radius: var(--radius-sm); font-size: 0.85rem; font-weight: 500; white-space: nowrap; transition: background 0.15s; }
+.grave-search-btn:hover { background: var(--stone); color: white; }
+
+/* Divider with label */
+.divider-labeled { display: flex; align-items: center; gap: 1rem; margin: 1.75rem 0; }
+.divider-labeled-line { flex: 1; height: 1px; background: var(--border); }
+.divider-labeled-text { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--stone-light); white-space: nowrap; }
+
+/* Travel note */
+.travel-note { margin-top: 1rem; font-size: 0.85rem; color: var(--stone-light); padding: 0.7rem 1rem; background: var(--parchment); border-radius: var(--radius-sm); border-left: 3px solid var(--border); }
+
+/* Secondary services */
+.secondary-services { margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--border); }
+.secondary-services-label { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--stone-light); margin-bottom: 1rem; }
+.secondary-services-grid { display: flex; flex-wrap: wrap; gap: 1rem; }
+.secondary-service-card { flex: 1; min-width: 190px; padding: 1rem 1.25rem; background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-sm); }
+.secondary-service-name { font-family: var(--serif); font-size: 0.95rem; font-weight: 600; color: var(--stone); margin-bottom: 0.3rem; }
+.secondary-service-desc { font-size: 0.82rem; color: var(--stone-mid); line-height: 1.6; }
+.secondary-service-price { font-size: 0.78rem; color: var(--moss-mid); margin-top: 0.5rem; font-weight: 500; }
+
+/* Section subtitle no-margin variant */
+.section-subtitle.no-margin { margin-bottom: 0; }
+
+/* First request note */
+.first-request-note { margin-top: 2rem; padding: 0.85rem 1.1rem; background: rgba(45,82,38,0.07); border-left: 3px solid var(--moss-light); border-radius: var(--radius-sm); display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; }
+.first-request-tag { font-size: 0.75rem; font-weight: 600; color: var(--moss-mid); text-transform: uppercase; letter-spacing: 0.08em; white-space: nowrap; }
+.first-request-text { font-size: 0.85rem; color: var(--stone-mid); }
+.first-request-link { color: var(--moss); text-decoration: none; border-bottom: 1px solid var(--moss-light); }
+.first-request-link:hover { color: var(--stone); border-color: var(--border); }
+
+/* Returning clients card */
+.returning-clients-card { margin-top: 2.5rem; padding: 1.5rem 1.75rem; background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); display: flex; gap: 1.5rem; align-items: flex-start; }
+.returning-clients-icon { flex-shrink: 0; width: 44px; height: 44px; border-radius: 50%; background: rgba(45,82,38,0.08); display: flex; align-items: center; justify-content: center; }
+.returning-clients-label { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--moss-mid); margin-bottom: 0.5rem; }
+.returning-clients-text { font-size: 0.875rem; color: var(--stone-mid); line-height: 1.8; }
+
+/* Testimonials grid */
+.section-title.light { color: white; }
+.section-subtitle.light { color: rgba(255,255,255,0.6); }
+.testimonial-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 3rem; }
+.testimonial-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; overflow: hidden; }
+.testimonial-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
+.testimonial-photos img { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; }
+.testimonial-labels { display: flex; justify-content: space-between; padding: 0.4rem 0.75rem; background: rgba(0,0,0,0.2); font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.35); }
+.testimonial-quote-wrap { padding: 1.25rem 1.5rem; }
+.testimonial-quote { font-family: var(--serif); font-style: italic; font-size: 1.05rem; color: rgba(255,255,255,0.85); line-height: 1.65; }
+
+/* Order contact extras */
+.order-contact-links { margin-top: 1.75rem; display: flex; flex-direction: column; gap: 0.75rem; }
+.order-email-link { font-size: 0.95rem; color: var(--stone); text-decoration: none; display: flex; align-items: center; gap: 0.5rem; font-weight: 500; }
+.order-email-link:hover { color: var(--moss); }
+.messenger-btn.fit { width: fit-content; }
+.form-helper-note { font-size: 0.82rem; color: var(--stone-light); margin-top: 0.4rem; }
+
+/* Cities layout with side panel */
+.cities-layout { display: grid; grid-template-columns: 1fr auto; gap: 3rem; align-items: start; margin-top: 2rem; }
+.cities-layout .cities-grid { margin-top: 0; }
+
+/* Footer index extras */
+.footer-what-label { color: rgba(255,255,255,0.35); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; margin-top: 1.25rem; margin-bottom: 0.5rem; }
+.footer-payment { border-top: 1px solid rgba(255,255,255,0.07); max-width: 1100px; margin: 1.5rem auto 0; padding-top: 1.5rem; display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
+.footer-payment-label { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.3); }
+.footer-payment-badge { opacity: 0.4; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.05em; color: white; background: rgba(255,255,255,0.12); padding: 3px 8px; border-radius: 3px; }
+.footer-bottom-link { color: rgba(255,255,255,0.4); text-decoration: none; font-size: 0.78rem; border-bottom: 1px solid rgba(255,255,255,0.15); }
+.footer-bottom-link:hover { color: rgba(255,255,255,0.7); border-color: rgba(255,255,255,0.4); }
+
+/* Index mobile */
+@media (max-width: 768px) {
 .order-bg { background: var(--cream); }
 .order-layout { display: grid; grid-template-columns: 1fr 1.2fr; gap: 4rem; margin-top: 3rem; align-items: start; }
 .order-guarantee { margin-bottom: 2rem; padding: 1.5rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--white); }
