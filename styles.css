@@ -43,6 +43,13 @@ body {
   overflow-x: hidden;
 }
 
+/* GLOBAL LINKS — override browser blue everywhere */
+a { color: var(--stone); text-decoration: underline; text-decoration-color: var(--border); text-underline-offset: 3px; transition: color 0.15s, text-decoration-color 0.15s; }
+a:hover { color: var(--moss); text-decoration-color: var(--moss-light); }
+/* Contextual: inherit parent colour, keep underline (hero, trust bar) */
+a.text-link-inherit { color: inherit; text-decoration-color: rgba(0,0,0,0.2); }
+a.text-link-inherit:hover { color: inherit; text-decoration-color: currentColor; opacity: 0.8; }
+
 /* ============================================================
    NAV — shared across all pages
    ============================================================ */
