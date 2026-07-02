@@ -140,6 +140,9 @@ footer { background: #161614; color: rgba(255,255,255,0.55); padding: 3rem 2.5re
   display: flex; justify-content: space-between; align-items: center;
   font-size: 0.78rem; flex-wrap: wrap; gap: 0.5rem;
 }
+.footer-bottom-link { color: rgba(255,255,255,0.4); text-decoration: none; font-size: 0.78rem; border-bottom: 1px solid rgba(255,255,255,0.15); }
+.footer-bottom-link:hover { color: rgba(255,255,255,0.7); border-color: rgba(255,255,255,0.4); }
+.first-request-link { color: var(--moss); text-decoration: none; border-bottom: 1px solid var(--moss-light); }
 .footer-langs { display: flex; gap: 1rem; }
 .footer-langs a { color: rgba(255,255,255,0.35); text-decoration: none; font-size: 0.78rem; transition: color 0.15s; }
 .footer-langs a:hover, .footer-langs a.active { color: white; }
