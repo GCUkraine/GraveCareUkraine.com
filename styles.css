@@ -430,7 +430,7 @@ body.about { font-size: 17px; line-height: 1.72; overflow-x: hidden; }
    ============================================================ */
 
 /* Hero */
-.hero-index { min-height: 100vh; display: flex; align-items: center; background: var(--parchment); padding: 110px 2.5rem 70px; position: relative; overflow: hidden; }
+.hero-index { min-height: 66vh; display: flex; align-items: center; background: var(--parchment); padding: 110px 2.5rem 70px; position: relative; overflow: hidden; }
 .hero-index::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 80% 60% at 70% 40%, rgba(45,82,38,0.06) 0%, transparent 70%); pointer-events: none; }
 .hero-inner { max-width: 1100px; margin: 0 auto; width: 100%; display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 5rem; align-items: center; position: relative; }
 .hero-eyebrow { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--moss-mid); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.75rem; }
@@ -460,7 +460,8 @@ section { padding: 5rem 2.5rem; }
 .section-inner { max-width: 1100px; margin: 0 auto; }
 
 /* Top services */
-.top-services-bg { background: var(--cream); }
+.top-services-bg { background: var(--cream); padding-bottom: 2rem; }
+.how-bg { padding-top: 2rem; }
 .top-services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-top: 3rem; }
 .top-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 2rem 1.75rem; position: relative; transition: border-color 0.2s, box-shadow 0.2s; }
 .top-card:hover { border-color: var(--moss-light); box-shadow: 0 4px 20px rgba(0,0,0,0.07); }
