@@ -155,18 +155,6 @@ footer { background: #161614; color: rgba(255,255,255,0.55); padding: 3rem 2.5re
 .footer-langs a:hover, .footer-langs a.active { color: white; }
 
 /* ============================================================
-   FOOTER — short (legal pages, success)
-   ============================================================ */
-.footer-short { background: #161614; color: rgba(255,255,255,0.55); padding: 30px 24px; text-align: center; font-size: 0.85rem; }
-.footer-short a { color: rgba(255,255,255,0.7); text-decoration: none; }
-.footer-short a:hover { color: white; }
-.footer-short-inner { max-width: var(--max); margin: 0 auto; }
-.footer-short-nav { display: flex; gap: 18px; justify-content: center; flex-wrap: wrap; margin-bottom: 14px; }
-.footer-short-socials { display: flex; gap: 18px; justify-content: center; margin-bottom: 14px; }
-.footer-short-socials a { color: rgba(255,255,255,0.35); transition: color 0.2s; display: flex; }
-.footer-short-socials a:hover { color: rgba(255,255,255,0.85); }
-
-/* ============================================================
    FLOATING WHATSAPP BUTTON
    ============================================================ */
 .wa-float {
@@ -226,6 +214,39 @@ footer { background: #161614; color: rgba(255,255,255,0.55); padding: 3rem 2.5re
 .doc-wrap h1 { font-family: var(--serif); font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 400; line-height: 1.25; color: #000; margin-bottom: 8px; }
 .doc-meta { font-size: 0.83rem; color: var(--stone-light); margin-bottom: 40px; padding-bottom: 24px; border-bottom: 1px solid var(--border); }
 .doc-wrap h2 { font-family: var(--serif); font-size: 1.15rem; font-weight: 600; color: #000; margin: 36px 0 10px; }
+
+/* ============================================================
+   INFO & FIELD NOTES PAGE
+   ============================================================ */
+.info-hero { background: var(--white); border-bottom: 1px solid var(--border); padding: 56px 0 48px; margin-top: 64px; }
+.info-hero-inner { max-width: 680px; margin: 0 auto; padding: 0 24px; }
+.info-hero h1 {   font-family: var(--serif); font-size: clamp(1.9rem, 3vw, 2.8rem); font-weight: 600; line-height: 1.25; color: #000; margin-bottom: 1rem; letter-spacing: -0.01em; }
+
+.article-list { max-width: 680px; margin: 0 auto; padding: 48px 24px 80px; font-family: var(--sans); }
+
+.article-row {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--border);
+}
+.article-row:hover .article-title { color: var(--moss); }
+.article-title {
+  font-family: var(--serif);
+  font-size: 1.15rem; font-weight: 600; color: #000;
+  line-height: 1.35; margin-bottom: 8px; transition: color 0.15s;
+}
+.article-desc { font-size: 0.93rem; color: var(--stone-mid); line-height: 1.6; }
+
+.article-row.soon { opacity: 0.45; pointer-events: none; }
+.soon-tag {
+  display: inline-block;
+  font-size: 0.7rem; font-weight: 700; letter-spacing: 0.07em;
+  text-transform: uppercase; color: var(--stone-light);
+  border: 1px solid var(--border); padding: 2px 7px; border-radius: 2px;
+  margin-bottom: 8px;
+}
 .doc-wrap h3 { font-size: 0.83rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--stone-light); margin: 20px 0 6px; }
 .doc-wrap p { color: var(--stone-mid); margin-bottom: 14px; font-size: 0.95rem; }
 .doc-wrap p:last-child { margin-bottom: 0; }
@@ -262,7 +283,6 @@ body.success {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 5rem 2rem 0;
 }
 .success-card {
   background: var(--white);
@@ -273,6 +293,7 @@ body.success {
   border: 1px solid var(--border);
   text-align: center;
   box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+  margin-top: 80px;
 }
 .check-circle {
   width: 50px; height: 50px;
@@ -317,7 +338,7 @@ body.success {
   font-size: 1rem; color: var(--stone-light);
 }
 .brand-mark span { color: var(--moss); }
-footer.footer-short { margin-top: 2rem; width: 100%; }
+body.success footer { margin-top: 2rem; width: 100%; }
 
 /* ============================================================
    ABOUT PAGE
@@ -477,9 +498,9 @@ section { padding: 5rem 2.5rem; }
 .top-features li { font-size: 0.85rem; color: var(--stone-mid); padding: 0.3rem 0; display: flex; gap: 0.5rem; align-items: flex-start; }
 .top-features li::before { content: '✓'; color: var(--moss); font-weight: 700; flex-shrink: 0; }
 .top-cta { display: block; text-align: center; background: var(--moss); color: white; padding: 0.75rem; border-radius: var(--radius-sm); font-size: 0.85rem; font-weight: 500; text-decoration: none; transition: background 0.15s, border-color 0.15s; }
-.top-cta:hover { background: var(--stone); }
+.top-cta:hover { background: var(--stone); color: white; }
 .top-card:not(.featured) .top-cta { background: var(--white); color: var(--stone); border: 1px solid var(--border); }
-.top-card:not(.featured) .top-cta:hover { background: var(--parchment); border-color: var(--stone-light); }
+.top-card:not(.featured) .top-cta:hover { background: var(--parchment); border-color: var(--stone-light); color: var(--stone); }
 
 /* Additional services */
 .add-services-bg { background: var(--parchment); }
