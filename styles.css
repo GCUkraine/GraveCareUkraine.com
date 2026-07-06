@@ -140,7 +140,7 @@ footer { background: #161614; color: rgba(255,255,255,0.55); padding: 3rem 2.5re
   max-width: var(--max);
 }
 .footer-socials a { color: rgba(255,255,255,0.35); transition: color 0.2s; display: flex; }
-.footer-socials a:hover { color: rgba(255,255,255,0.85); }
+.footer-socials a:hover { color: var(--moss-light); }
 /* Bottom bar */
 .footer-bottom {
   max-width: var(--max); margin: 0 auto; padding-top: 1.5rem;
@@ -365,7 +365,6 @@ body.about { font-size: 17px; line-height: 1.72; overflow-x: hidden; }
 .about p { margin-bottom: 18px; color: var(--stone-mid); }
 .about p:last-child { margin-bottom: 0; }
 .about p strong { color: var(--stone); font-weight: 600; }
-.about a { color: var(--moss); }
 
 /* Pull quote */
 .pull-quote { background: var(--white); border-left: 3px solid var(--moss); padding: 22px 26px; margin: 32px 0; border-radius: 0 4px 4px 0; }
