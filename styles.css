@@ -261,6 +261,47 @@ footer { background: #161614; color: rgba(255,255,255,0.55); padding: 3rem 2.5re
 .doc-wrap td { padding: 8px 12px; border: 1px solid var(--border); color: var(--stone-mid); vertical-align: top; }
 
 /* ============================================================
+   ARTICLE / POST PAGES (Eleventy — /info/*.html)
+   ============================================================ */
+.post-body { display: block; }
+
+.info-hero-eyebrow {
+  font-size: 0.78rem; font-weight: 600; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--moss); margin-bottom: 14px;
+}
+.info-hero-inner > p:not(.info-hero-eyebrow) {
+  font-size: 1rem; color: var(--stone-mid); line-height: 1.75; max-width: 600px;
+}
+.article-date { font-size: 0.83rem; color: var(--stone-light); margin-top: 1.25rem; }
+.article-date:empty { display: none; }
+
+/* The converted markdown body reuses .article-desc — scope full
+   typography to it only inside the article page, so the short
+   listing-page blurb (.article-row .article-desc) is unaffected. */
+article.post .article-desc { font-size: 1rem; line-height: 1.75; }
+article.post .article-desc > hr:first-child { display: none; } /* stray hr from md frontmatter delimiter */
+article.post .article-desc h2 {
+  font-family: var(--serif); font-size: 1.4rem; font-weight: 600;
+  color: #000; line-height: 1.35; margin: 2.5rem 0 1rem;
+}
+article.post .article-desc h3 {
+  font-family: var(--serif); font-size: 1.05rem; font-weight: 600;
+  color: #000; margin: 1.75rem 0 0.6rem;
+}
+article.post .article-desc p { color: var(--stone-mid); margin-bottom: 1.1rem; }
+article.post .article-desc p:last-child { margin-bottom: 0; }
+article.post .article-desc ul { color: var(--stone-mid); margin: 0.5rem 0 1.1rem 1.3rem; }
+article.post .article-desc li { margin-bottom: 0.4rem; line-height: 1.65; }
+article.post .article-desc strong { color: var(--stone); font-weight: 600; }
+article.post .article-desc a { color: var(--moss); text-decoration-color: var(--border); }
+article.post .article-desc a:hover { color: var(--moss-mid); text-decoration-color: var(--moss-light); }
+article.post .article-desc hr { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
+
+@media (max-width: 640px) {
+  .info-hero { padding: 40px 0 32px; }
+}
+
+/* ============================================================
    MOBILE
    ============================================================ */
 @media (max-width: 768px) {
