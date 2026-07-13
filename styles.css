@@ -269,9 +269,6 @@ footer { background: #161614; color: rgba(255,255,255,0.55); padding: 3rem 2.5re
   font-size: 0.78rem; font-weight: 600; letter-spacing: 0.12em;
   text-transform: uppercase; color: var(--moss); margin-bottom: 14px;
 }
-.info-hero-inner > p:not(.info-hero-eyebrow) {
-  font-size: 1rem; color: var(--stone-mid); line-height: 1.75; max-width: 600px;
-}
 .article-date { font-size: 0.83rem; color: var(--stone-light); margin-top: 1.25rem; }
 .article-date:empty { display: none; }
 
@@ -630,7 +627,7 @@ section { padding: 5rem 2.5rem; }
 .testimonial-photos img { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; }
 .testimonial-labels { display: flex; justify-content: space-between; padding: 0.4rem 0.75rem; background: rgba(0,0,0,0.2); font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.35); }
 .testimonial-quote-wrap { padding: 1.25rem 1.5rem; }
-.testimonial-quote { font-family: var(--serif); font-style: italic; font-size: 1.05rem; color: rgba(255,255,255,0.85); line-height: 1.65; }
+.testimonial-quote { font-family: var(--serif); font-style: italic; font-size: 0.85rem; color: rgba(255,255,255,0.85); line-height: 1.65; }
 
 /* Order contact extras */
 .order-contact-links { margin-top: 1.75rem; display: flex; flex-direction: column; gap: 0.75rem; }
