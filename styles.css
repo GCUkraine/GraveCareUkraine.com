@@ -247,6 +247,12 @@ footer { background: #161614; color: rgba(255,255,255,0.55); padding: 3rem 2.5re
   border: 1px solid var(--border); padding: 2px 7px; border-radius: 2px;
   margin-bottom: 8px;
 }
+.article-content img,
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 .doc-wrap h3 { font-size: 0.83rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--stone-light); margin: 20px 0 6px; }
 .doc-wrap p { color: var(--stone-mid); margin-bottom: 14px; font-size: 0.95rem; }
 .doc-wrap p:last-child { margin-bottom: 0; }
