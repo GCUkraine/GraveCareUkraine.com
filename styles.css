@@ -247,8 +247,7 @@ footer { background: #161614; color: rgba(255,255,255,0.55); padding: 3rem 2.5re
   border: 1px solid var(--border); padding: 2px 7px; border-radius: 2px;
   margin-bottom: 8px;
 }
-.article-content img,
-.post-content img {
+.article-desc img {
   max-width: 100%;
   height: auto;
   display: block;
