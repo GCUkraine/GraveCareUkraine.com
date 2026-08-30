@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-  <!-- ===== HOMEPAGE — EN / UA / RU ===== -->
+  <!-- ===== HOMEPAGE — EN / UA / RU (static, hand-authored — update manually) ===== -->
   <url>
     <loc>https://gravecareukraine.com/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://gravecareukraine.com/"/>
@@ -36,7 +36,7 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- ===== ABOUT / OUR STORY ===== -->
+  <!-- ===== ABOUT / OUR STORY (static, hand-authored — update manually) ===== -->
   <url>
     <loc>https://gravecareukraine.com/about</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://gravecareukraine.com/about"/>
@@ -70,7 +70,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- ===== FIELD NOTES / INFO INDEXES ===== -->
+  <!-- ===== FIELD NOTES / INFO INDEXES (static listing pages — excluded from the slug collection, so kept manual) ===== -->
   <url>
     <loc>https://gravecareukraine.com/info/en</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://gravecareukraine.com/info/en"/>
@@ -104,75 +104,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- ===== FIELD NOTES — ARTICLE 1 ===== -->
-  <url>
-    <loc>https://gravecareukraine.com/info/how-our-grave-cleaning-service-works-in-ukraine-from-first-message-to-final-photos</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gravecareukraine.com/info/how-our-grave-cleaning-service-works-in-ukraine-from-first-message-to-final-photos"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://gravecareukraine.com/info/how-our-grave-cleaning-service-works-in-ukraine-from-first-message-to-final-photos-ua"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://gravecareukraine.com/info/how-our-grave-cleaning-service-works-in-ukraine-from-first-message-to-final-photos-ru"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://gravecareukraine.com/info/how-our-grave-cleaning-service-works-in-ukraine-from-first-message-to-final-photos"/>
-    <lastmod>2026-08-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://gravecareukraine.com/info/how-our-grave-cleaning-service-works-in-ukraine-from-first-message-to-final-photos-ua</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gravecareukraine.com/info/how-our-grave-cleaning-service-works-in-ukraine-from-first-message-to-final-photos"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://gravecareukraine.com/info/how-our-grave-cleaning-service-works-in-ukraine-from-first-message-to-final-photos-ua"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://gravecareukraine.com/info/how-our-grave-cleaning-service-works-in-ukraine-from-first-message-to-final-photos-ru"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://gravecareukraine.com/info/how-our-grave-cleaning-service-works-in-ukraine-from-first-message-to-final-photos"/>
-    <lastmod>2026-08-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://gravecareukraine.com/info/how-our-grave-cleaning-service-works-in-ukraine-from-first-message-to-final-photos-ru</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gravecareukraine.com/info/how-our-grave-cleaning-service-works-in-ukraine-from-first-message-to-final-photos"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://gravecareukraine.com/info/how-our-grave-cleaning-service-works-in-ukraine-from-first-message-to-final-photos-ua"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://gravecareukraine.com/info/how-our-grave-cleaning-service-works-in-ukraine-from-first-message-to-final-photos-ru"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://gravecareukraine.com/info/how-our-grave-cleaning-service-works-in-ukraine-from-first-message-to-final-photos"/>
-    <lastmod>2026-08-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- ===== FIELD NOTES — ARTICLE 2 ===== -->
-  <url>
-    <loc>https://gravecareukraine.com/info/how-to-find-a-grave-using-a-death-certificate</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gravecareukraine.com/info/how-to-find-a-grave-using-a-death-certificate"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://gravecareukraine.com/info/how-to-find-a-grave-using-a-death-certificate-ua"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://gravecareukraine.com/info/how-to-find-a-grave-using-a-death-certificate-ru"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://gravecareukraine.com/info/how-to-find-a-grave-using-a-death-certificate"/>
-    <lastmod>2026-08-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://gravecareukraine.com/info/how-to-find-a-grave-using-a-death-certificate-ua</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gravecareukraine.com/info/how-to-find-a-grave-using-a-death-certificate"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://gravecareukraine.com/info/how-to-find-a-grave-using-a-death-certificate-ua"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://gravecareukraine.com/info/how-to-find-a-grave-using-a-death-certificate-ru"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://gravecareukraine.com/info/how-to-find-a-grave-using-a-death-certificate"/>
-    <lastmod>2026-08-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://gravecareukraine.com/info/how-to-find-a-grave-using-a-death-certificate-ru</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://gravecareukraine.com/info/how-to-find-a-grave-using-a-death-certificate"/>
-    <xhtml:link rel="alternate" hreflang="uk" href="https://gravecareukraine.com/info/how-to-find-a-grave-using-a-death-certificate-ua"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://gravecareukraine.com/info/how-to-find-a-grave-using-a-death-certificate-ru"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://gravecareukraine.com/info/how-to-find-a-grave-using-a-death-certificate"/>
-    <lastmod>2026-08-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- ===== LEGAL PAGES ===== -->
+  <!-- ===== LEGAL PAGES (static, hand-authored — update manually) ===== -->
   <url>
     <loc>https://gravecareukraine.com/privacy</loc>
     <lastmod>2026-05-20</lastmod>
@@ -229,5 +161,225 @@
     <changefreq>yearly</changefreq>
     <priority>0.1</priority>
   </url>
+
+  <!-- ===== FIELD NOTES ARTICLES — fully automatic, no manual updates ever needed below this line =====
+       Loops over every article (anything with a `slug` in frontmatter), groups language
+       siblings by shared slug, and writes hreflang alternates between them automatically.
+       Add a new article, translate it, or bump dateModified — this block updates itself
+       on the next Eleventy build. -->
+  
+  
+  
+  <url>
+    <loc>https://gravecareukraine.com/info/how-to-find-a-grave-using-a-death-certificate-ru.html</loc>
+    
+    <xhtml:link rel="alternate"
+      hreflang="ru"
+      href="https://gravecareukraine.com/info/how-to-find-a-grave-using-a-death-certificate-ru.html"/>
+    
+    <xhtml:link rel="alternate"
+      hreflang="uk"
+      href="https://gravecareukraine.com/info/how-to-find-a-grave-using-a-death-certificate-ua.html"/>
+    
+    <xhtml:link rel="alternate"
+      hreflang="en"
+      href="https://gravecareukraine.com/info/how-to-find-a-grave-using-a-death-certificate.html"/>
+    
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gravecareukraine.com/info/how-to-find-a-grave-using-a-death-certificate-ru.html"/>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+  <url>
+    <loc>https://gravecareukraine.com/info/how-to-find-a-grave-using-a-death-certificate-ua.html</loc>
+    
+    <xhtml:link rel="alternate"
+      hreflang="ru"
+      href="https://gravecareukraine.com/info/how-to-find-a-grave-using-a-death-certificate-ru.html"/>
+    
+    <xhtml:link rel="alternate"
+      hreflang="uk"
+      href="https://gravecareukraine.com/info/how-to-find-a-grave-using-a-death-certificate-ua.html"/>
+    
+    <xhtml:link rel="alternate"
+      hreflang="en"
+      href="https://gravecareukraine.com/info/how-to-find-a-grave-using-a-death-certificate.html"/>
+    
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gravecareukraine.com/info/how-to-find-a-grave-using-a-death-certificate-ua.html"/>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+  <url>
+    <loc>https://gravecareukraine.com/info/how-our-grave-cleaning-service-works-in-ukraine-from-first-message-to-final-photos.html</loc>
+    
+    <xhtml:link rel="alternate"
+      hreflang="en"
+      href="https://gravecareukraine.com/info/how-our-grave-cleaning-service-works-in-ukraine-from-first-message-to-final-photos.html"/>
+    
+    <xhtml:link rel="alternate"
+      hreflang="ru"
+      href="https://gravecareukraine.com/info/how-our-grave-cleaning-service-works-in-ukraine-from-first-message-to-final-photos-ru.html"/>
+    
+    <xhtml:link rel="alternate"
+      hreflang="uk"
+      href="https://gravecareukraine.com/info/how-our-grave-cleaning-service-works-in-ukraine-from-first-message-to-final-photos-ua.html"/>
+    
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gravecareukraine.com/info/how-our-grave-cleaning-service-works-in-ukraine-from-first-message-to-final-photos.html"/>
+    <lastmod>2026-07-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+  <url>
+    <loc>https://gravecareukraine.com/info/how-our-grave-cleaning-service-works-in-ukraine-from-first-message-to-final-photos-ru.html</loc>
+    
+    <xhtml:link rel="alternate"
+      hreflang="en"
+      href="https://gravecareukraine.com/info/how-our-grave-cleaning-service-works-in-ukraine-from-first-message-to-final-photos.html"/>
+    
+    <xhtml:link rel="alternate"
+      hreflang="ru"
+      href="https://gravecareukraine.com/info/how-our-grave-cleaning-service-works-in-ukraine-from-first-message-to-final-photos-ru.html"/>
+    
+    <xhtml:link rel="alternate"
+      hreflang="uk"
+      href="https://gravecareukraine.com/info/how-our-grave-cleaning-service-works-in-ukraine-from-first-message-to-final-photos-ua.html"/>
+    
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gravecareukraine.com/info/how-our-grave-cleaning-service-works-in-ukraine-from-first-message-to-final-photos-ru.html"/>
+    <lastmod>2026-07-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+  <url>
+    <loc>https://gravecareukraine.com/info/how-our-grave-cleaning-service-works-in-ukraine-from-first-message-to-final-photos-ua.html</loc>
+    
+    <xhtml:link rel="alternate"
+      hreflang="en"
+      href="https://gravecareukraine.com/info/how-our-grave-cleaning-service-works-in-ukraine-from-first-message-to-final-photos.html"/>
+    
+    <xhtml:link rel="alternate"
+      hreflang="ru"
+      href="https://gravecareukraine.com/info/how-our-grave-cleaning-service-works-in-ukraine-from-first-message-to-final-photos-ru.html"/>
+    
+    <xhtml:link rel="alternate"
+      hreflang="uk"
+      href="https://gravecareukraine.com/info/how-our-grave-cleaning-service-works-in-ukraine-from-first-message-to-final-photos-ua.html"/>
+    
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gravecareukraine.com/info/how-our-grave-cleaning-service-works-in-ukraine-from-first-message-to-final-photos-ua.html"/>
+    <lastmod>2026-07-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+  <url>
+    <loc>https://gravecareukraine.com/info/how-to-find-a-grave-using-a-death-certificate.html</loc>
+    
+    <xhtml:link rel="alternate"
+      hreflang="ru"
+      href="https://gravecareukraine.com/info/how-to-find-a-grave-using-a-death-certificate-ru.html"/>
+    
+    <xhtml:link rel="alternate"
+      hreflang="uk"
+      href="https://gravecareukraine.com/info/how-to-find-a-grave-using-a-death-certificate-ua.html"/>
+    
+    <xhtml:link rel="alternate"
+      hreflang="en"
+      href="https://gravecareukraine.com/info/how-to-find-a-grave-using-a-death-certificate.html"/>
+    
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gravecareukraine.com/info/how-to-find-a-grave-using-a-death-certificate.html"/>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+  <url>
+    <loc>https://gravecareukraine.com/info/how-to-arrange-grave-care-in-ukraine-from-abroad.html</loc>
+    
+    <xhtml:link rel="alternate"
+      hreflang="en"
+      href="https://gravecareukraine.com/info/how-to-arrange-grave-care-in-ukraine-from-abroad.html"/>
+    
+    <xhtml:link rel="alternate"
+      hreflang="uk"
+      href="https://gravecareukraine.com/info/how-to-arrange-grave-care-in-ukraine-from-abroad-ua.html"/>
+    
+    <xhtml:link rel="alternate"
+      hreflang="ru"
+      href="https://gravecareukraine.com/info/how-to-arrange-grave-care-in-ukraine-from-abroad-ru.html"/>
+    
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gravecareukraine.com/info/how-to-arrange-grave-care-in-ukraine-from-abroad.html"/>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+  <url>
+    <loc>https://gravecareukraine.com/info/what-does-the-price-of-grave-care-include.html</loc>
+    
+    <xhtml:link rel="alternate"
+      hreflang="en"
+      href="https://gravecareukraine.com/info/what-does-the-price-of-grave-care-include.html"/>
+    
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gravecareukraine.com/info/what-does-the-price-of-grave-care-include.html"/>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+  <url>
+    <loc>https://gravecareukraine.com/info/how-to-arrange-grave-care-in-ukraine-from-abroad-ua.html</loc>
+    
+    <xhtml:link rel="alternate"
+      hreflang="en"
+      href="https://gravecareukraine.com/info/how-to-arrange-grave-care-in-ukraine-from-abroad.html"/>
+    
+    <xhtml:link rel="alternate"
+      hreflang="uk"
+      href="https://gravecareukraine.com/info/how-to-arrange-grave-care-in-ukraine-from-abroad-ua.html"/>
+    
+    <xhtml:link rel="alternate"
+      hreflang="ru"
+      href="https://gravecareukraine.com/info/how-to-arrange-grave-care-in-ukraine-from-abroad-ru.html"/>
+    
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gravecareukraine.com/info/how-to-arrange-grave-care-in-ukraine-from-abroad-ua.html"/>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+  <url>
+    <loc>https://gravecareukraine.com/info/how-to-arrange-grave-care-in-ukraine-from-abroad-ru.html</loc>
+    
+    <xhtml:link rel="alternate"
+      hreflang="en"
+      href="https://gravecareukraine.com/info/how-to-arrange-grave-care-in-ukraine-from-abroad.html"/>
+    
+    <xhtml:link rel="alternate"
+      hreflang="uk"
+      href="https://gravecareukraine.com/info/how-to-arrange-grave-care-in-ukraine-from-abroad-ua.html"/>
+    
+    <xhtml:link rel="alternate"
+      hreflang="ru"
+      href="https://gravecareukraine.com/info/how-to-arrange-grave-care-in-ukraine-from-abroad-ru.html"/>
+    
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gravecareukraine.com/info/how-to-arrange-grave-care-in-ukraine-from-abroad-ru.html"/>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
 
 </urlset>

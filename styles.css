@@ -273,6 +273,18 @@ footer { background: #161614; color: rgba(255,255,255,0.55); padding: 3rem 2.5re
 .info-hero-eyebrow {
   font-size: 0.78rem; font-weight: 600; letter-spacing: 0.12em;
   text-transform: uppercase; color: var(--moss); margin-bottom: 14px;
+  display: flex; flex-wrap: wrap; gap: 0.5rem;
+}
+.tag-pill {
+  display: inline-block;
+  padding: 0.25rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--moss-mid);
+  background: rgba(45,82,38,0.05);
 }
 .article-date { font-size: 0.83rem; color: var(--stone-light); margin-top: 1.25rem; }
 .article-date:empty { display: none; }
@@ -577,6 +589,16 @@ section { padding: 5rem 2.5rem; }
 .cities-grid { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 2rem; }
 .city-tag { padding: 0.4rem 1rem; border: 1px solid var(--border); border-radius: 20px; font-size: 0.85rem; color: var(--stone-mid); background: var(--white); }
 .city-tag.primary { border-color: var(--moss); color: var(--moss); font-weight: 500; background: rgba(45,82,38,0.05); }
+.tag-pill {
+  display: inline-block;
+  padding: 0.25rem 0.7rem;
+  margin-right: 0.4rem;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  font-size: 0.75rem;
+  color: var(--moss-mid);
+  background: rgba(45,82,38,0.05);
+}
 
 /* Grave search card */
 .grave-search-card { background: var(--parchment); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem 2rem; margin-top: 2rem; margin-bottom: 0.75rem; }
