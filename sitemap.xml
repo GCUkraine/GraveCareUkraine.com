@@ -391,6 +391,20 @@
   
   
   <url>
+    <loc>https://gravecareukraine.com/info/what-was-the-weather-like-that-day.html</loc>
+    
+    <xhtml:link rel="alternate"
+      hreflang="en"
+      href="https://gravecareukraine.com/info/what-was-the-weather-like-that-day.html"/>
+    
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gravecareukraine.com/info/what-was-the-weather-like-that-day.html"/>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+  <url>
     <loc>https://gravecareukraine.com/info/how-to-arrange-grave-care-in-ukraine-from-abroad-ua.html</loc>
     
     <xhtml:link rel="alternate"
