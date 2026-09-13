@@ -146,29 +146,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!-- <p class="topic-heading"></p> -->
 
-<div class="article-desc"> <p class="kicker">Weather archive</p>
- <h1>What was the weather like that day</h1>
- <form id="form">
- <label>City<input id="city" type="text" required="" value="Kyiv"></label>
- <label>Date<input id="date" type="date" required="" max="2026-09-12"></label>
- <button type="submit">Look up weather</button>
- </form>
- <div id="loader"><div class="spin"></div></div>
- <p id="error"></p>
- <article id="result">
- <p id="headline"></p>
- <p class="avg" id="avg"></p>
- <p class="sub">average temperature</p>
- <div class="grid" id="grid"></div>
- <p id="vibe"></p>
- </article>
- <script>
- const dailyVars = 'temperature_2m_max,temperature_2m_min,temperature_2m_mean,apparent_temperature_max,apparent_temperature_min,precipitation_sum,rain_sum,snowfall_sum,precipitation_hours,wind_speed_10m_max,wind_gusts_10m_max,wind_direction_10m_dominant,sunshine_duration,shortwave_radiation_sum,et0_fao_evapotranspiration';
- const dateEl = document.getElementById('date');
- const y = new Date();
- y.setDate(y.getDate() - 1);
- dateEl.max = y.toISOString().slice(0, 10);
- dateEl.value = '1986-04-26';
+<div class="article-desc"><p>Look up the weather for any past day in any city. Enter a place and a date, then the archive fills in temperature, rain, wind, and sunshine.</p>
+<form id="form">
+  <label>City <input id="city" type="text" required value="Kyiv"></label>
+  <label>Date <input id="date" type="date" required></label>
+  <button type="submit">Look up weather</button>
+</form>
+<div id="loader" hidden>Loading…</div>
+<p id="error" hidden></p>
+<article id="result" hidden>
+  <p id="headline"></p>
+  <p id="avg"></p>
+  <p>average temperature</p>
+  <div id="grid"></div>
+  <p id="vibe"></p>
+</article>
+<script>
+    const dailyVars = 'temperature_2m_max,temperature_2m_min,temperature_2m_mean,apparent_temperature_max,apparent_temperature_min,precipitation_sum,rain_sum,snowfall_sum,precipitation_hours,wind_speed_10m_max,wind_gusts_10m_max,wind_direction_10m_dominant,sunshine_duration,shortwave_radiation_sum,et0_fao_evapotranspiration';
+    const dateEl = document.getElementById('date');
+    const y = new Date();
+    y.setDate(y.getDate() - 1);
+    dateEl.max = y.toISOString().slice(0, 10);
+    dateEl.value = '1986-04-26';
 <p>async function getJson(url) {
 const res = await fetch(url);
 if (!res.ok) throw new Error('api');
@@ -242,7 +241,7 @@ loader.style.display = 'none';
 }
 });
 </script></p>
-<script>/*aha-img-guard v2.1:user-relative-no-stock*/(function(){var API="https://skycastle.ai/api/img-search?q=";var bad=/images\.unsplash\.com|source\.unsplash\.com|picsum\.photos|loremflickr\.com|placekitten/;function tile(i){try{var d=document.createElement("div");d.style.cssText="width:100%;height:100%;min-height:120px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#e9dfd2,#cdb89a);color:#6b5d49;font:600 14px system-ui;text-align:center;padding:10px;box-sizing:border-box";d.textContent=i.getAttribute("alt")||"";if(i.parentNode)i.parentNode.replaceChild(d,i);}catch(e){}}function real(i){var q=(i.getAttribute("alt")||"").trim();if(!q){tile(i);return;}fetch(API+encodeURIComponent(q)).then(function(r){return r.json();}).then(function(d){if(d&&d.url){i.onerror=function(){tile(i);};i.src=d.url;}else tile(i);}).catch(function(){tile(i);});}function userRel(sa){return!!sa&&!/^https?:\/\//i.test(sa)&&!/^\/\//.test(sa)&&!/^data:/i.test(sa)&&!/^blob:/i.test(sa);}function chk(i){if(i.__ag)return;try{if(i.closest&&i.closest("nav,footer"))return;if(i.closest&&i.closest("header")&&/\b(logo|brand|icon|wordmark)\b/i.test(i.getAttribute("alt")||""))return;}catch(e){}var s=(i.currentSrc||i.src||i.getAttribute("src")||"").trim();var sa=(i.getAttribute("src")||"").trim();var alt=(i.getAttribute("alt")||"").trim();if(bad.test(s)){i.__ag=1;real(i);return;}if(/^https?:\/\//.test(s)){i.__ag=1;i.addEventListener("error",function(){real(i);});return;}if(!sa){if(alt){i.__ag=1;real(i);}return;}i.__ag=1;var fail=function(){if(userRel(sa))tile(i);else real(i);};if(i.complete&&i.naturalWidth===0){fail();return;}i.addEventListener("error",fail);}function scan(){document.querySelectorAll("img").forEach(chk);}try{new MutationObserver(scan).observe(document.documentElement,{childList:true,subtree:true,attributes:true,attributeFilter:["src"]});}catch(e){}document.addEventListener("DOMContentLoaded",scan);window.addEventListener("load",function(){scan();setTimeout(scan,800);setTimeout(scan,2000);});})();</script></div>
+</div>
 
 </div>
 
