@@ -303,6 +303,48 @@
   
   
   <url>
+    <loc>https://gravecareukraine.com/info/historical-weather-in-ukraine.html</loc>
+    
+    <xhtml:link rel="alternate"
+      hreflang="en"
+      href="https://gravecareukraine.com/info/historical-weather-in-ukraine.html"/>
+    
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gravecareukraine.com/info/historical-weather-in-ukraine.html"/>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+  <url>
+    <loc>https://gravecareukraine.com/info/historical-weather-in-ukraine-ru.html</loc>
+    
+    <xhtml:link rel="alternate"
+      hreflang="ru"
+      href="https://gravecareukraine.com/info/historical-weather-in-ukraine-ru.html"/>
+    
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gravecareukraine.com/info/historical-weather-in-ukraine-ru.html"/>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+  <url>
+    <loc>https://gravecareukraine.com/info/historical-weather-in-ukraine-ua.html</loc>
+    
+    <xhtml:link rel="alternate"
+      hreflang="uk"
+      href="https://gravecareukraine.com/info/historical-weather-in-ukraine-ua.html"/>
+    
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gravecareukraine.com/info/historical-weather-in-ukraine-ua.html"/>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+  <url>
     <loc>https://gravecareukraine.com/info/how-to-arrange-grave-care-in-ukraine-from-abroad.html</loc>
     
     <xhtml:link rel="alternate"
@@ -385,20 +427,6 @@
     
     <xhtml:link rel="alternate" hreflang="x-default" href="https://gravecareukraine.com/info/what-does-the-price-of-grave-care-include-ua.html"/>
     <lastmod>2026-08-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  
-  
-  <url>
-    <loc>https://gravecareukraine.com/info/what-was-the-weather-like-that-day.html</loc>
-    
-    <xhtml:link rel="alternate"
-      hreflang="en"
-      href="https://gravecareukraine.com/info/what-was-the-weather-like-that-day.html"/>
-    
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://gravecareukraine.com/info/what-was-the-weather-like-that-day.html"/>
-    <lastmod>2026-09-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
